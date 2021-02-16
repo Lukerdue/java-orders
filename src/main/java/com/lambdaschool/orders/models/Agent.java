@@ -36,6 +36,15 @@ public class Agent
         this.workingarea = workingarea;
     }
 
+    public Agent(String agentname, String country , double commission, String phone, String workingarea) {
+
+        this.agentname = agentname;
+        this.commission = commission;
+        this.country = country;
+        this.phone = phone;
+        this.workingarea = workingarea;
+    }
+
     public long getAgentcode() {
         return agentcode;
     }

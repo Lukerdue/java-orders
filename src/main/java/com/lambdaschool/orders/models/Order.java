@@ -26,8 +26,16 @@ public class Order
     public Order() {
     }
 
-    public Order(long ordercode, double advanceamount, double ordamount, String orderdescription, Customer customer) {
-        this.ordnum = ordercode;
+    public Order(long ordnum, double advanceamount, double ordamount, String orderdescription, Customer customer, Set<Payment> payments) {
+        this.ordnum = ordnum;
+        this.advanceamount = advanceamount;
+        this.ordamount = ordamount;
+        this.orderdescription = orderdescription;
+        this.customer = customer;
+        this.payments = payments;
+    }
+
+    public Order(double advanceamount, double ordamount, Customer customer, String orderdescription) {
         this.advanceamount = advanceamount;
         this.ordamount = ordamount;
         this.orderdescription = orderdescription;

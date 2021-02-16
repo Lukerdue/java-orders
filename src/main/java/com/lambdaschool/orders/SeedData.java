@@ -1,6 +1,6 @@
 package com.lambdaschool.orders;
 
-import com.github.javafaker.Faker;
+//import com.github.javafaker.Faker;
 import com.lambdaschool.orders.models.Agent;
 import com.lambdaschool.orders.models.Customer;
 import com.lambdaschool.orders.models.Order;
@@ -136,7 +136,8 @@ public class SeedData
                 "008-22536178",
                 "");
 
-        Customer c01 = new Customer("Holmes",
+        Customer c01 = new Customer(
+                "Holmes",
                 "London",
                 "London",
                 "UK",
@@ -147,7 +148,8 @@ public class SeedData
                 4000.00,
                 "BBBBBBB",
                 a03);
-        Customer c02 = new Customer("Micheal",
+        Customer c02 = new Customer(
+                "Micheal",
                 "New York",
                 "New York",
                 "USA",
@@ -158,7 +160,8 @@ public class SeedData
                 6000.00,
                 "CCCCCCC",
                 a08);
-        Customer c03 = new Customer("Albert",
+        Customer c03 = new Customer(
+                "Albert",
                 "New York",
                 "New York",
                 "USA",
@@ -169,7 +172,8 @@ public class SeedData
                 6000.00,
                 "BBBBSBB",
                 a08);
-        Customer c04 = new Customer("Ravindran",
+        Customer c04 = new Customer(
+                "Ravindran",
                 "Bangalore",
                 "Bangalore",
                 "India",
@@ -180,7 +184,8 @@ public class SeedData
                 8000.00,
                 "AVAVAVA",
                 a11);
-        Customer c05 = new Customer("Cook",
+        Customer c05 = new Customer(
+                "Cook",
                 "London",
                 "London",
                 "UK",
@@ -191,7 +196,8 @@ public class SeedData
                 6000.00,
                 "FSDDSDF",
                 a06);
-        Customer c06 = new Customer("Stuart",
+        Customer c06 = new Customer(
+                "Stuart",
                 "London",
                 "London",
                 "UK",
@@ -202,7 +208,8 @@ public class SeedData
                 11000.00,
                 "GFSGERS",
                 a03);
-        Customer c07 = new Customer("Bolt",
+        Customer c07 = new Customer(
+                "Bolt",
                 "New York",
                 "New York",
                 "USA",
@@ -213,7 +220,8 @@ public class SeedData
                 3000.00,
                 "DDNRDRH",
                 a08);
-        Customer c08 = new Customer("Fleming",
+        Customer c08 = new Customer(
+                "Fleming",
                 "Brisban",
                 "Brisban",
                 "Australia",
@@ -224,7 +232,8 @@ public class SeedData
                 5000.00,
                 "NHBGVFC",
                 a05);
-        Customer c09 = new Customer("Jacks",
+        Customer c09 = new Customer(
+                "Jacks",
                 "Brisban",
                 "Brisban",
                 "Australia",
@@ -235,7 +244,8 @@ public class SeedData
                 7000.00,
                 "WERTGDF",
                 a05);
-        Customer c10 = new Customer("Yearannaidu",
+        Customer c10 = new Customer(
+                "Yearannaidu",
                 "Chennai",
                 "Chennai",
                 "India",
@@ -246,7 +256,8 @@ public class SeedData
                 8000.00,
                 "ZZZZBFV",
                 a10);
-        Customer c11 = new Customer("Sasikant",
+        Customer c11 = new Customer(
+                "Sasikant",
                 "Mumbai",
                 "Mumbai",
                 "India",
@@ -257,7 +268,8 @@ public class SeedData
                 11000.00,
                 "147-25896312",
                 a02);
-        Customer c12 = new Customer("Ramanathan",
+        Customer c12 = new Customer(
+                "Ramanathan",
                 "Chennai",
                 "Chennai",
                 "India",
@@ -268,7 +280,8 @@ public class SeedData
                 9000.00,
                 "GHRDWSD",
                 a10);
-        Customer c13 = new Customer("Avinash",
+        Customer c13 = new Customer(
+                "Avinash",
                 "Mumbai",
                 "Mumbai",
                 "India",
@@ -279,7 +292,8 @@ public class SeedData
                 9000.00,
                 "113-12345678",
                 a02);
-        Customer c14 = new Customer("Winston",
+        Customer c14 = new Customer(
+                "Winston",
                 "Brisban",
                 "Brisban",
                 "Australia",
@@ -290,7 +304,8 @@ public class SeedData
                 6000.00,
                 "AAAAAAA",
                 a05);
-        Customer c15 = new Customer("Karl",
+        Customer c15 = new Customer(
+                "Karl",
                 "London",
                 "London",
                 "UK",
@@ -301,7 +316,8 @@ public class SeedData
                 3000.00,
                 "AAAABAA",
                 a06);
-        Customer c16 = new Customer("Shilton",
+        Customer c16 = new Customer(
+                "Shilton",
                 "Torento",
                 "Torento",
                 "Canada",
@@ -312,7 +328,8 @@ public class SeedData
                 11000.00,
                 "DDDDDDD",
                 a04);
-        Customer c17 = new Customer("Charles",
+        Customer c17 = new Customer(
+                "Charles",
                 "Hampshair",
                 "Hampshair",
                 "UK",
@@ -323,7 +340,8 @@ public class SeedData
                 5000.00,
                 "MMMMMMM",
                 a09);
-        Customer c18 = new Customer("Srinivas",
+        Customer c18 = new Customer(
+                "Srinivas",
                 "Bangalore",
                 "Bangalore",
                 "India",
@@ -334,7 +352,8 @@ public class SeedData
                 9000.00,
                 "AAAAAAB",
                 a07);
-        Customer c19 = new Customer("Steven",
+        Customer c19 = new Customer(
+                "Steven",
                 "San Jose",
                 "San Jose",
                 "USA",
@@ -345,7 +364,8 @@ public class SeedData
                 3000.00,
                 "KRFYGJK",
                 a10);
-        Customer c20 = new Customer("Karolina",
+        Customer c20 = new Customer(
+                "Karolina",
                 "Torento",
                 "Torento",
                 "Canada",
@@ -356,7 +376,8 @@ public class SeedData
                 5000.00,
                 "HJKORED",
                 a04);
-        Customer c21 = new Customer("Martin",
+        Customer c21 = new Customer(
+                "Martin",
                 "Torento",
                 "Torento",
                 "Canada",
@@ -367,7 +388,8 @@ public class SeedData
                 8000.00,
                 "MJYURFD",
                 a04);
-        Customer c22 = new Customer("Ramesh",
+        Customer c22 = new Customer(
+                "Ramesh",
                 "Mumbai",
                 "Mumbai",
                 "India",
@@ -378,7 +400,8 @@ public class SeedData
                 12000.00,
                 "Phone No",
                 a02);
-        Customer c23 = new Customer("Rangarappa",
+        Customer c23 = new Customer(
+                "Rangarappa",
                 "Bangalore",
                 "Bangalore",
                 "India",
@@ -389,7 +412,8 @@ public class SeedData
                 12000.00,
                 "AAAATGF",
                 a01);
-        Customer c24 = new Customer("Venkatpati",
+        Customer c24 = new Customer(
+                "Venkatpati",
                 "Bangalore",
                 "Bangalore",
                 "India",
@@ -400,7 +424,8 @@ public class SeedData
                 12000.00,
                 "JRTVFDD",
                 a07);
-        Customer c25 = new Customer("Sundariya",
+        Customer c25 = new Customer(
+                "Sundariya",
                 "Chennai",
                 "Chennai",
                 "India",
@@ -419,7 +444,8 @@ public class SeedData
         o01.getPayments()
                 .add(pay1);
 
-        Order o02 = new Order(3000.00,
+        Order o02 = new Order(
+                3000.00,
                 500.00,
                 c19,
                 "SOD");
@@ -552,78 +578,78 @@ public class SeedData
 
         //Begins the faker data
 
-        Faker dataFaker = new Faker(new Locale("en-US"));
-        Set<String> customerNames = new HashSet<>();
-        for (int i = 0; i < 100; i++) {
-            customerNames.add(dataFaker.name()
-                    .fullName());
-        }
-
-        for (String theName : customerNames) {
-            String custcity = dataFaker.address()
-                    .city();
-            String tempWorkingarea = dataFaker.address()
-                    .cityName();
-            String tempCustcountry = dataFaker.address()
-                    .country();
-            String tempGrade = dataFaker.country()
-                    .countryCode2();
-            double tempOpeningamt = dataFaker.number()
-                    .randomDouble(2,
-                            0,
-                            10000);
-            double tempReceiveamt = dataFaker.number()
-                    .randomDouble(2,
-                            0,
-                            10000);
-            double tempPaymentamt = dataFaker.number()
-                    .randomDouble(2,
-                            0,
-                            10000);
-            double tempOutstandingamt = dataFaker.number()
-                    .randomDouble(2,
-                            0,
-                            10000);
-            String tempPhone = dataFaker.phoneNumber()
-                    .phoneNumber();
-
-            Customer fakeCustomer = new Customer(theName,
-                    custcity,
-                    tempWorkingarea,
-                    tempCustcountry,
-                    tempGrade,
-                    tempOpeningamt,
-                    tempReceiveamt,
-                    tempPaymentamt,
-                    tempOutstandingamt,
-                    tempPhone,
-                    a10);
-
-            int randomNumber = random.nextInt(10); // random number 0 through 9
-            for (int i = 0; i < randomNumber; i++) {
-                double tempGetOrdamount = dataFaker.number()
-                        .randomDouble(2,
-                                0,
-                                10000);
-                double tempGetAdvanceamount = dataFaker.number()
-                        .randomDouble(2,
-                                0,
-                                10000);
-                String tempGetOrderdescription = dataFaker.lorem()
-                        .characters();
-
-                Order newOrder = new Order(tempGetOrdamount,
-                        tempGetAdvanceamount,
-                        fakeCustomer,
-                        tempGetOrderdescription);
-
-                newOrder.getPayments().add(pay1);
-                fakeCustomer.getOrders()
-                        .add(newOrder);
-            }
-
-            // this actually saves the faker data.
-            custrepos.save(fakeCustomer);
-        }
+//        Faker dataFaker = new Faker(new Locale("en-US"));
+//        Set<String> customerNames = new HashSet<>();
+//        for (int i = 0; i < 100; i++) {
+//            customerNames.add(dataFaker.name()
+//                    .fullName());
+//        }
+//
+//        for (String theName : customerNames) {
+//            String custcity = dataFaker.address()
+//                    .city();
+//            String tempWorkingarea = dataFaker.address()
+//                    .cityName();
+//            String tempCustcountry = dataFaker.address()
+//                    .country();
+//            String tempGrade = dataFaker.country()
+//                    .countryCode2();
+//            double tempOpeningamt = dataFaker.number()
+//                    .randomDouble(2,
+//                            0,
+//                            10000);
+//            double tempReceiveamt = dataFaker.number()
+//                    .randomDouble(2,
+//                            0,
+//                            10000);
+//            double tempPaymentamt = dataFaker.number()
+//                    .randomDouble(2,
+//                            0,
+//                            10000);
+//            double tempOutstandingamt = dataFaker.number()
+//                    .randomDouble(2,
+//                            0,
+//                            10000);
+//            String tempPhone = dataFaker.phoneNumber()
+//                    .phoneNumber();
+//
+//            Customer fakeCustomer = new Customer(theName,
+//                    custcity,
+//                    tempWorkingarea,
+//                    tempCustcountry,
+//                    tempGrade,
+//                    tempOpeningamt,
+//                    tempReceiveamt,
+//                    tempPaymentamt,
+//                    tempOutstandingamt,
+//                    tempPhone,
+//                    a10);
+//
+//            int randomNumber = random.nextInt(10); // random number 0 through 9
+//            for (int i = 0; i < randomNumber; i++) {
+//                double tempGetOrdamount = dataFaker.number()
+//                        .randomDouble(2,
+//                                0,
+//                                10000);
+//                double tempGetAdvanceamount = dataFaker.number()
+//                        .randomDouble(2,
+//                                0,
+//                                10000);
+//                String tempGetOrderdescription = dataFaker.lorem()
+//                        .characters();
+//
+//                Order newOrder = new Order(tempGetOrdamount,
+//                        tempGetAdvanceamount,
+//                        fakeCustomer,
+//                        tempGetOrderdescription);
+//
+//                newOrder.getPayments().add(pay1);
+//                fakeCustomer.getOrders()
+//                        .add(newOrder);
+//            }
+//
+//            // this actually saves the faker data.
+//            custrepos.save(fakeCustomer);
+//        }
     }
 }
