@@ -111,7 +111,6 @@ public class CustomerServiceImpl implements CustomerService {
         if(customer.getCustcountry() != null) {updateCust.setCustcountry(customer.getCustcountry());}
         if(customer.getCustcity() != null){updateCust.setCustcity(customer.getCustcity());}
         if(customer.getCustname() != null){updateCust.setCustname(customer.getCustname());}
-        if(customer.getAgent() != null ){updateCust.setAgent(customer.getAgent());}
         if(customer.getWorkingarea() != null){updateCust.setWorkingarea(customer.getWorkingarea());}
         if(customer.hasvaluepaymentamt){updateCust.setPaymentamt(customer.getPaymentamt());}
 
@@ -127,8 +126,16 @@ public class CustomerServiceImpl implements CustomerService {
                 for (Payment p : o.getPayments()) {
                     Payment pay = payrepo.findById(p.getPaymentid())
                             .orElseThrow(() -> new EntityNotFoundException("payment with id: " + p.getPaymentid() + "not found"));
-                    o.getPayments().add(pay);
+                    temporder.getPayments().add(pay);
                 }
+                updateCust.getOrders().add(temporder);
+            }
+        }
+        if(customer.getAgent() != null ){
+            if(agentrepo.findById(customer.getAgent().getAgentcode()).isPresent()){
+                Agent agent = agentrepo.findById(customer.getAgent().getAgentcode())
+                        .orElseThrow(()-> new EntityNotFoundException("Agent "+customer.getAgent().getAgentcode()+" could not be found"));
+                updateCust.setAgent(agent);
             }
         }
         return updateCust;
