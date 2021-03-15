@@ -27,11 +27,11 @@ public class OrdersController {
         return new ResponseEntity<>(orders, HttpStatus.OK);
     }
 
+    //http://localhost:2019/orders/order/22
     @GetMapping(value="/order/{ordnum}")
     public ResponseEntity<?> getOrderById(@PathVariable long ordnum)
     {
         Order order = orderservice.findOrderById(ordnum);
         return new ResponseEntity<>(order, HttpStatus.OK);
     }
-
 }

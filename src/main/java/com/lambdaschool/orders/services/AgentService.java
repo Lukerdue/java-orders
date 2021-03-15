@@ -10,4 +10,7 @@ public interface AgentService {
     List<Agent> findAllAgents();
     Agent findById(long id);
     Agent findByName(String name);
+    void DeleteAllAgents();
+    void deleteById(long id);
+    void update(long id, Agent agent);
 }
